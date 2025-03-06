@@ -5,101 +5,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cúrriculo Italo Santos</title>
     <link rel="stylesheet" href="./assets/css/style.css">
-    <script src="./assets/js/index.js" defer    ></script>
+    <link rel="stylesheet" href="./assets/css/Carousel.css">
+    <link rel="stylesheet" href="./assets/css/Contact.css">
+    <script src="./assets/js/Carousel.js" defer></script>
+    <script src="./assets/js/RedirectLink.js" defer></script>
 </head>
 <body>
-    <div id="Introduction">
-        <div>
-            <h1 id="Name" data-text="Italo Santos Mendes">Italo Santos Mendes</h1>
+    <div class="PageIntroductionAndTechnology"> 
+        <div id="Introduction">
+            <div class="Name">
+                <h1 id="Name" data-text="Italo Santos Mendes">Italo Santos Mendes</h1>
+            </div>
+            <div class="JobName">
+                <h3 id="JobName">Desenvolvedor FullStack</h3>
+            </div>
+            <div class="Text">
+                <p id="About-Me">
+                    Olá! Sou Italo Santos, desenvolvedor FullStack com foco em .NET, Java e TypeScript. <br>
+                    Tenho conhecimento em bancos de dados SQL e NoSQL e estou sempre buscando aprimorar meus conhecimentos em Back-End e Front-End. <br>
+                    Atualmente, estou aprofudando meu aprendizado em design patterns, computação em nuvem como a Azure
+                    e aprimorando meu inglês para expandir minhas habilidades na área de tecnologia.  
+                </p>
+            </div>
         </div>
-        <div>
-            <h3 id="JobName">Desenvolvedor FullStack</h3>
-        </div>
-        <div class="Text">
-            <p id="About-Me">
-                Olá! Sou Italo Santos, desenvolvedor FullStack com foco em .NET, Java e TypeScript. <br>
-                Tenho conhecimento em bancos de dados SQL e NoSQL e estou sempre buscando aprimorar meus conhecimentos em Back-End e Front-End. <br>
-                Atualmente, estou aprofudando meu aprendizado em design patterns, computação em nuvem como a Azure
-                e aprimorando meu inglês para expandir minhas habilidades na área de tecnologia.  
-            </p>
-        </div>
-    </div>
-    <div class="TechnologySection">
-        <h1 id="TecnhologyText">Tecnologias</h1>
-        <div class="Carousel">
-            <!-- Aprender como implementar o carrocel aqui. 
-            -->
-            <div class="Carousel-wrapper">
-                <div class="Carousel-conteiner item-left">
-                    <img class="item" src="./assets/img/icons8-c-sharp-logo-48.png" alt="C-Sharp">
-                    <div class="technology-name">C#</div>
+        <div class="TechnologySection">
+            <div class="TechnologyText">
+                <h1 id="TecnhologyText">Tecnologias</h1>
+            </div>
+            <div class="Carousel">
+                <!-- Aprender como implementar o carrocel aqui. 
+                -->
+                <div class="Carousel-wrapper">
+                    <div class="Carousel-conteiner item-left">
+                        <img class="item" src="./assets/img/icons8-c-sharp-logo-48.png" alt="C-Sharp">
+                        <div class="technology-name">C#</div>
+                    </div>
+            
+                    <div class="Carousel-conteiner item-center">
+                        <img class="item" src="./assets/img/icons8-node-js-48.png" alt="NodeJs">
+                        <div class="technology-name">Node.JS</div>    
+                    </div>
+            
+                    <div class="Carousel-conteiner item-right">
+                        <img class="item" src="./assets/img/icons8-java-48.png" alt="Java">
+                        <div class="technology-name">Java</div>
+                    </div>
+            
+                    <div class="Carousel-conteiner">
+                        <img class="item" src="./assets/img/icons8-javascript-48.png" alt="JavaScript">
+                        <div class="technology-name">JavaScript</div>
+                    </div>
+            
+                    <div class="Carousel-conteiner">
+                        <img class="item" src="./assets/img/icons8-typescript-48.png" alt="TypeScript">
+                        <div class="technology-name">TypeScript</div>
+                    </div>
+            
+                    <div class="Carousel-conteiner">
+                        <img class="item" src="./assets/img/icons8-git-48.png" alt="Git">
+                        <div class="technology-name">Git</div>
+                    </div>
+            
+                    <div class="Carousel-conteiner">
+                        <img class="item" src="./assets/img/icons8-docker-48.png" alt="Docker">
+                        <div class="technology-name">Docker</div>
+                    </div>
+            
+                    <div class="Carousel-conteiner">
+                        <img class="item" src="./assets/img/icons8-kubernetes-48.png" alt="Kubernetes">
+                        <div class="technology-name">Kubernetes</div>
+                    </div>
+            
+                    <div class="Carousel-conteiner">
+                        <img class="item" src="./assets/img/icons8-azure-48.png" alt="Azure">
+                        <div class="technology-name">Azure</div>
+                    </div>
+            
+                    <div class="Carousel-conteiner">
+                        <img class="item" src="./assets/img/icons8-html5-48.png" alt="HTML5">
+                        <div class="technology-name">HTML5</div>
+                    </div>
+            
+                    <div class="Carousel-conteiner">
+                        <img class="item" src="./assets/img/icons8-css3-48.png" alt="CSS3">
+                        <div class="technology-name">CSS3</div>
+                    </div>
+            
+                    <div class="Carousel-conteiner">
+                        <img class="item" src="./assets/img/icons8-bootstrap-48.png" alt="BootStrap">
+                        <div class="technology-name">BootStrap</div>
+                    </div>
+            
+                    <div class="Carousel-conteiner">
+                        <img class="item" src="./assets/img/icons8-linux-48.png" alt="Linux">
+                        <div class="technology-name">Linux</div>
+                    </div>  
+            
                 </div>
-        
-                <div class="Carousel-conteiner item-center">
-                    <img class="item current-item" src="./assets/img/icons8-node-js-48.png" alt="NodeJs">
-                    <div class="technology-name">Node.JS</div>    
-                </div>
-        
-                <div class="Carousel-conteiner item-right">
-                    <img class="item" src="./assets/img/icons8-java-48.png" alt="Java">
-                    <div class="technology-name">Java</div>
-                </div>
-        
-                <div class="Carousel-conteiner">
-                    <img class="item" src="./assets/img/icons8-javascript-48.png" alt="JavaScript">
-                    <div class="technology-name">JavaScript</div>
-                </div>
-        
-                <div class="Carousel-conteiner">
-                    <img class="item" src="./assets/img/icons8-typescript-48.png" alt="TypeScript">
-                    <div class="technology-name">TypeScript</div>
-                </div>
-        
-                <div class="Carousel-conteiner">
-                    <img class="item" src="./assets/img/icons8-git-48.png" alt="Git">
-                    <div class="technology-name">Git</div>
-                </div>
-        
-                <div class="Carousel-conteiner">
-                    <img class="item" src="./assets/img/icons8-docker-48.png" alt="Docker">
-                    <div class="technology-name">Docker</div>
-                </div>
-        
-                <div class="Carousel-conteiner">
-                    <img class="item" src="./assets/img/icons8-kubernetes-48.png" alt="Kubernetes">
-                    <div class="technology-name">Kubernetes</div>
-                </div>
-        
-                <div class="Carousel-conteiner">
-                    <img class="item" src="./assets/img/icons8-azure-48.png" alt="Azure">
-                    <div class="technology-name">Azure</div>
-                </div>
-        
-                <div class="Carousel-conteiner">
-                    <img class="item" src="./assets/img/icons8-html5-48.png" alt="HTML5">
-                    <div class="technology-name">HTML5</div>
-                </div>
-        
-                <div class="Carousel-conteiner">
-                    <img class="item" src="./assets/img/icons8-css3-48.png" alt="CSS3">
-                    <div class="technology-name">CSS3</div>
-                </div>
-        
-                <div class="Carousel-conteiner">
-                    <img class="item" src="./assets/img/icons8-bootstrap-48.png" alt="BootStrap">
-                    <div class="technology-name">BootStrap</div>
-                </div>
-        
-                <div class="Carousel-conteiner">
-                    <img class="item" src="./assets/img/icons8-linux-48.png" alt="Linux">
-                    <div class="technology-name">Linux</div>
-                </div>  
-        
             </div>
         </div>
     </div>
     <div class="Contact">
         <!-- Colocar as imagens aqui e redirecionar elas para o site correto.-->
+         <h1 id="Contact">Contato</h1>
+         <div class="ButtonsSocialMedia">
+            <div class="AllContactButtons">
+                <button class="ButtonContact">
+                    <img class="IconButton" id="Whatsapp" src="./assets/img/icons8-whatsapp-48.png" alt="Whatsapp">
+                </button>
+                <button class="ButtonContact">
+                    <img class="IconButton" id="Email" src="./assets/img/icons8-mail-48.png" alt="Email">
+                </button>
+                <button class="ButtonContact">
+                    <img class="IconButton" id="Git" src="./assets/img/icons8-git-48.png" alt="git">
+                </button>
+                <button class="ButtonContact" >
+                    <img class="IconButton" id="Linkedin" src="./assets/img/icons8-linkedin-48.png" alt="Linkedin">
+                </button>
+            </div>
+         </div>
     </div>
     <div class="DownloadResume">
         <!-- Aprender como vai funcionar para o usuário realizar o download do curriculo.-->

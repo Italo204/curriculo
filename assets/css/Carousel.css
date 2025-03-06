@@ -1,0 +1,66 @@
+/* Estilização do Carrossel */
+.Carousel {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: first baseline;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    height: 200px;
+}
+
+/* Wrapper dos itens */
+.Carousel-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: initial;
+    height: 115px;
+}
+
+/* Ajustes individuais para cada item do carrossel */
+.Carousel-conteiner {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+/* Item da esquerda (animação de saída) */
+.item-left {
+    transform: translateX(-100px);
+    opacity: 0.5;
+    visibility: visible;
+}
+
+/* Item central (animação de entrada) */
+.item-center {
+    transform: translateX(0) scale(1.4);
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Item da direita */
+.item-right {
+    transform: translateX(100px);
+    opacity: 0.5;
+    visibility: visible;
+    height: 55px;
+    width: 55px;
+}
+
+/* Ajuste dos ícones */
+.item {
+    width: 55px;
+    height: 55px;
+    flex-shrink: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Nome das tecnologias */
+.technology-name {
+    color: white;
+    font-size: 11px;
+}

@@ -1,0 +1,42 @@
+/*Contact part*/
+
+.Contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 295px;
+}
+
+#Contact{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.ButtonContact{
+    background-color: #1C1C1C;
+    border: 2px solid #228DF1;
+    border-radius: 20%;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.ButtonContact:hover{
+    transform: scale(1.1);
+}
+
+.AllContactButtons{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.ButtonSocialMedia{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.IconButton{
+    height: 38px;
+    width: 38px;
+}
