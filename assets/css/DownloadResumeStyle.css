@@ -1,0 +1,46 @@
+.DownloadResume {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    width: auto;
+    padding-left: 50%;
+}
+
+.ButtonResumeDownload {
+    flex: 1;
+    display: flex; /* Faz com que a div ocupe apenas o espaço necessário */
+    justify-content: flex-end;
+    align-items: center;
+    width: auto;
+    margin-top: -9%;
+    margin-right: 30%;
+}
+
+.IconDownload{
+    height: 45px;
+    width: 45px;
+}
+
+#ButtonDownloadResume {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    background-color: #61C2CD;
+    border: 1px solid #61C2CD;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+#ButtonDownloadResume:hover{
+    transform: scale(1.1);
+}
+
+#TextDownload{
+    font-size: medium;
+    color: white;
+    text-decoration: none;
+    font-weight: 900;
+    text-shadow: 2px 2px gray;
+}

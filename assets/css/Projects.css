@@ -1,0 +1,71 @@
+.Projects {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#ProjectTextTitle {
+    margin-top: 40%;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.ButtonProgrammingLanguages {
+    margin-top: 2%;
+}
+
+.ProjectsContainer {
+    width: 490%;
+    height: 470px; /* Limita a altura do container */
+    margin-top: -40%;
+    margin-left: 5%;
+    padding: 10px;
+    background-color: #363636;
+    border-radius: 8px;
+    box-shadow: 0 0 10px 5px rgba(255, 38, 0, 0.89);
+    
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Impede que qualquer conteúdo ultrapasse */
+}
+
+.ProjectsContainer.active {
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+.LanguageTitle {
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto 100px auto; /* Ajuste de margem para o título */
+    width: auto;
+}
+
+.ProjectList {
+    max-height: 400px; /* Define a altura máxima para a lista de projetos */
+    background-color: #363636;
+    overflow-y: auto;
+    padding: 10px;
+    border-radius: 8px;
+    flex-grow: 1; /* Garante que a lista ocupe o espaço restante */
+}
+
+.Project {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    color: #333;
+}
+
+.Project:last-child {
+    margin-bottom: 0;
+}

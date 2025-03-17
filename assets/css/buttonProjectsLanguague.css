@@ -1,0 +1,33 @@
+.ButtonLanguage{
+    width: 130px;
+    height: 130px;
+    background-color: #2D2D2D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    transition: transform 0.5s ease-in-out, box-shadow 0.3s ease-in-out;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.8);
+    z-index: 1;
+}
+
+#JavaButton{
+    box-shadow: 0 0 30px 10px rgba(255, 38, 0, 0.89);
+}
+
+#JavaButton img{
+    width: 60px;
+    height: 60px;
+    transition: transform 0.5s ease-in-out;
+    position:absolute;
+}
+
+.ativo{
+    transform: rotate(45deg) !important;
+    box-shadow: 0 0 2px 4px rgba(255, 38, 0, 0.89) !important ; 
+}
+.ativo img{
+    transform: rotate(-45deg);
+}

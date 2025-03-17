@@ -3,13 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cúrriculo Italo Santos</title>
+    <title>Currículo Italo Santos</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/Carousel.css">
     <link rel="stylesheet" href="./assets/css/Contact.css">
+    <link rel="stylesheet" href="./assets/css/DownloadResumeStyle.css">
+    <link rel="stylesheet" href="./assets/css/Projects.css">
+    <link rel="stylesheet" href="./assets/css/buttonProjectsLanguague.css">
     <script src="./assets/js/Carousel.js" defer></script>
     <script src="./assets/js/RedirectLink.js" defer></script>
     <script src="./assets/js/config.js" defer></script>
+    <script src="./assets/js/ButtonProjectAnimation.js"></script>
+    <script src="./assets/js/Projects.js"></script>
 </head>
 <body>
     <div class="PageIntroductionAndTechnology"> 
@@ -127,11 +132,29 @@
          </div>
     </div>
     <div class="DownloadResume">
-        <!-- Aprender como vai funcionar para o usuário realizar o download do curriculo.-->
+        <div class="ButtonResumeDownload">
+            <button id="ButtonDownloadResume">
+                <img class="IconDownload" src="./assets/img/icons8-download-64.png" alt="DownloadIcon">
+                <a href="./assets/resume/Curriculo.pdf" download="Curriculo_Desenvolvedor-Italo" id="TextDownload">
+                    Download Currículo
+                </a>
+            </button>
+        </div>
     </div>
     <div class="Projects">
+        <div class="TextProjects">
+            <h1 id="ProjectTextTitle">Projetos</h1>
+        </div>
         <div class="ButtonProgrammingLanguages">
-            <!--Fazer os botões aqui e aprender a realizar a animação pretendida.-->
+            <div class="ButtonLanguage" id="JavaButton">
+                <img src="./assets/img/icons8-java-48.png" alt="Java">
+            </div>
+            <div class="ProjectsContainer" id="JavaProjectsContainer">
+                <h2 class="LanguageTitle" id="JavaLanguageTitle">Projetos Java</h2>
+                <div class="ProjectList" id="JavaProjectList">
+
+                </div>
+            </div>
         </div>
     </div>
     <div class="Certifications">
