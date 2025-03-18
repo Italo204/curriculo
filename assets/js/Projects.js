@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function loadProjects(projectList) {
         const projects = [
-            { title: 'Projeto 1', description: 'Descrição do projeto 1' },
+            { title: 'Projeto 1', description: 'Descri' },
             { title: 'Projeto 2', description: 'Descrição do projeto 2' },
             { title: 'Projeto 3', description: 'Descrição do projeto 3' },
             { title: 'Projeto 4', description: 'Descrição do projeto 4' }
@@ -26,7 +26,8 @@ document.addEventListener('DOMContentLoaded', function () {
             projectElement.classList.add('Project');
             projectElement.innerHTML = `
                 <h4>${project.title}</h4>
-                <p>${project.description}</p>
+                <h4 class='DurationTime'>Duração</h4>
+                <p class='ProjectDescription'>${project.description}</p>
             `;
             projectList.appendChild(projectElement); // Agora os projetos são adicionados dentro da ProjectList
         });
